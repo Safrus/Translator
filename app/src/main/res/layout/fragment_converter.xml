@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/converterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:animateLayoutChanges="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/mainColor"
+        android:theme="@style/ToolbarStyle"
+        app:contentInsetStart="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/ic_luna"
+        app:popupTheme="@style/BasePopupMenu"
+        app:title="Кириллица - Latynsha"
+        app:titleMarginStart="12dp"
+        app:titleTextColor="?attr/titleColor" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/accentColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/mainScreenView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/theme"
+        app:layout_constraintBottom_toTopOf="@+id/lineView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/editTextView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/mainColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/editTextView"
+        app:layout_constraintEnd_toEndOf="@id/editTextView"
+        app:layout_constraintTop_toTopOf="@id/editTextView"
+        app:srcCompat="@drawable/ic_send" />
+
+    <View
+        android:id="@+id/lineView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/accentColor"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toTopOf="@+id/editTextView"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/enteredTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Mátіndі engіzіńіz"
+        android:inputType="textNoSuggestions"
+        android:lineSpacingExtra="5sp"
+        android:textColor="?attr/textColor"
+        android:textColorHint="?attr/textColor"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/editTextView"
+        app:layout_constraintEnd_toStartOf="@+id/sendButton"
+        app:layout_constraintStart_toStartOf="@id/editTextView"
+        app:layout_constraintTop_toTopOf="@id/editTextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foregroundGravity="bottom"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/lineView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mainScreenView"
+        app:layout_constraintTop_toBottomOf="@+id/lineView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:src="@drawable/ic_down_arrow"
+        android:visibility="gone"
+        app:backgroundTint="?attr/mainColor"
+        app:borderWidth="0.5dp"
+        app:fabCustomSize="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineView2"
+        app:layout_constraintEnd_toEndOf="@+id/mainScreenView"
+        app:maxImageSize="28dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

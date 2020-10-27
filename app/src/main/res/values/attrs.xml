@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainColor" format="color|reference"/>
+    <attr name="accentColor" format="color|reference"/>
+    <attr name="stateChecked" format="color|reference"/>
+    <attr name="stateUnchecked" format="color|reference"/>
+    <attr name="textColor" format="color|reference"/>
+    <attr name="titleColor" format="color|reference"/>
+    <attr name="myMessageColor" format="color|reference"/>
+    <attr name="iconColor" format="color|reference"/>
+    <attr name="favoriteMessageInside" format="color|reference"/>
+    <attr name="favoriteMessageBorder" format="color|reference"/>
+    <attr name="smallLineColor" format="color|reference"/>
+    <declare-styleable name="VideoPlayerView">
+        <attr name="isSeekBarVisible" format="boolean"/>
+        <attr name="previewVisible" format="integer"/>
+    </declare-styleable>
+</resources>

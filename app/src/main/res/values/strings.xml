@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Translator</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menuCopy">Kóshіrý</string>
+    <string name="menuShare">Bólіsý</string>
+    <string name="menuDelete">Óshіrý</string>
+    <string name="menuLike">Unaǵandar tіzіmіne qosý</string>
+    <string name="menuLetter">Avtorǵa hat jazý</string>
+    <string name="menuOptionsShare">Qosymshamen bólіsý</string>
+    <string name="menuHelp">Maǵan qosymsha kerek</string>
 </resources>

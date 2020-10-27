@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inside"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <Button
+            android:id="@+id/shareButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_share"
+            android:drawablePadding="18dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|left"
+            android:paddingLeft="14dp"
+            android:text="Bólіsý"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="?attr/textColor"
+            app:layout_constraintEnd_toEndOf="@+id/copyButton"
+            app:layout_constraintStart_toStartOf="@+id/copyButton"
+            app:layout_constraintTop_toBottomOf="@+id/copyButton" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawablePadding="19dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|left"
+            android:paddingLeft="14dp"
+            android:text="Óshіrý"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="?attr/textColor"
+            app:layout_constraintEnd_toEndOf="@+id/shareButton"
+            app:layout_constraintStart_toStartOf="@+id/shareButton"
+            app:layout_constraintTop_toBottomOf="@+id/shareButton" />
+
+        <Button
+            android:id="@+id/likeButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_liked"
+            android:drawablePadding="18dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|left"
+            android:paddingLeft="14dp"
+            android:text="Unaǵandar tіzіmіne qosý"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="?attr/accentColor"
+            app:layout_constraintEnd_toEndOf="@+id/deleteButton"
+            app:layout_constraintStart_toStartOf="@+id/deleteButton"
+            app:layout_constraintTop_toBottomOf="@+id/deleteButton" />
+
+        <Button
+            android:id="@+id/copyButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:drawableLeft="@drawable/ic_copy"
+            android:drawablePadding="18dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|left"
+            android:paddingLeft="14dp"
+            android:text="Kóshіrý"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="?attr/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

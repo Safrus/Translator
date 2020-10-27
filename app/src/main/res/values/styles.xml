@@ -3,10 +3,52 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">#1789DB</item>
         <item name="colorPrimaryDark">#ffffff</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="mainColor">#ffffff</item>
+        <item name="accentColor">#1789DB</item>
+        <item name="stateChecked">#1789DB</item>
+        <item name="stateUnchecked">#949494</item>
+        <item name="textColor">#393737</item>
+        <item name="titleColor">#808080</item>
+        <item name="myMessageColor">#D5ECCF</item>
+        <item name="iconColor">#000000</item>
+        <item name="favoriteMessageInside">#F6FAFE</item>
+        <item name="favoriteMessageBorder">#F0F4F7</item>
+        <item name="smallLineColor">#0D000000</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimaryDark">#323D4E</item>
+        <item name="mainColor">#323D4E</item>
+        <item name="accentColor">#DB7517</item>
+        <item name="stateChecked">#DB7517</item>
+        <item name="stateUnchecked">#ffffff</item>
+        <item name="textColor">#ffffff</item>
+        <item name="titleColor">#ffffff</item>
+        <item name="myMessageColor">#074A46</item>
+        <item name="iconColor">#DB7517</item>
+        <item name="favoriteMessageInside">#323D4E</item>
+        <item name="favoriteMessageBorder">#DB7517</item>
+        <item name="smallLineColor">#DB7517</item>
+    </style>
+
+    <style name="BasePopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">?attr/textColor</item>
+        <item name="android:itemBackground">?attr/mainColor</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:listPreferredItemHeightSmall">42dp</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">22sp</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">?attr/actionBarSize</item>
     </style>
 
 </resources>
